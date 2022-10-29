@@ -1,0 +1,4 @@
+syntax = "proto3";
+package log.v1;
+
+option go_package = "github.com/travisjeffery/api/log_v1";

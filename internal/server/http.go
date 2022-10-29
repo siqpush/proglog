@@ -62,7 +62,8 @@ func (s *httpServer) handleProduce(w http.ResponseWriter, r *http.Request) {
 }
 
 //anytime something is fetched **GET** 
-func (s *httpServer) handleConsume(w http.ResponseWriter, r *http.Request) { var req ConsumeRequest
+func (s *httpServer) handleConsume(w http.ResponseWriter, r *http.Request) { 
+	var req ConsumeRequest
 	err := json.NewDecoder(r.Body).Decode(&req)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
