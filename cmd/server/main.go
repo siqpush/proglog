@@ -1,6 +1,8 @@
-package main 
+package main
+
 import (
 	"log"
+
 	"github.com/siqpush/proglog/internal/server"
 )
 
